@@ -26,4 +26,4 @@ Clone or download this repository to your local machine.
 
 Open the index.html file in any web browser to view the coffee shop webpage.
 
-Website live at : https://jayalloyd.github.io/Coffee-Time-Shop-Webpage/
+view the live page : https://jayalloyd.github.io/Coffee-Time-Shop-Webpage/
