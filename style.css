@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     font-family: "Montserrat", serif;
     margin: 0;
@@ -11,46 +12,35 @@
     position: fixed;
 }
 
+/* Sidebar Image */
 .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
     width: 150px;
-    justify-content: center;
-    align-self: center;
-    overflow: hidden;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
     background-image: url(./assets/coffeecup.jpg);
     background-size: cover;
     background-position: center;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-
-a {
-    line-height: 3rem; 
-    margin-left: 3rem;
+/* Sidebar Links */
+.sidebar-options {
+    line-height: 3rem;
+    margin-left: 2rem;
     text-align: center;
     text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    a {
-        line-height: 2rem; 
-    }
-}
-
-
-a .sidebar-options {
-    text-align: right;
-    margin-left: 50px;
     margin-top: 10px;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-bottom: 50px;
     margin-bottom: 20px;
 }
 
+/* Main Content */
 .main-content {
     height: 100vh;
     align-self: stretch;
@@ -60,6 +50,7 @@ a .sidebar-options {
     margin-bottom: 0;
 }
 
+/* Main Heading */
 .main-content h1 {
     color: aqua;
     text-align: center;
@@ -67,10 +58,25 @@ a .sidebar-options {
     text-decoration: wavy;
 }
 
-.main-content .btn {
-    color: crimson;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar-options {
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    a {
+        line-height: 2rem;
+    }
 }
