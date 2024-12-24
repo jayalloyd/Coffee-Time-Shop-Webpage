@@ -1,74 +1,76 @@
-
-*{
+* {
     font-family: "Montserrat", serif;
-    margin:0;
-
-   
-  }
-  /* .main{
-    display:flex;
-    height: 100vh;
-} */
-
-.sidebar{
-    background-color: burlywood;
-    height:100%;
-margin-left:0.5rem;
-    width: 340px;
-    position: fixed;
-
+    margin: 0;
 }
 
-.first{
+.sidebar {
+    background-color: burlywood;
+    height: 100%;
+    margin-left: 0.5rem;
+    width: 340px;
+    position: fixed;
+}
+
+.first {
     height: 150px;
     width: 150px;
     justify-content: center;
     align-self: center;
-overflow: hidden;
-margin-left: 20px;
-margin-top: 20px;
-margin-right: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
     background-image: url(./assets/coffeecup.jpg);
-}
-a{
-    line-height: 5;
-    margin-left: 3rem;
-text-align: center;
-text-decoration: solid;
+    background-size: cover;
+    background-position: center;
 }
 
- a .sidebar-options{
-    text-align:right;
+
+a {
+    line-height: 3rem; 
+    margin-left: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    a {
+        line-height: 2rem; 
+    }
+}
+
+
+a .sidebar-options {
+    text-align: right;
     margin-left: 50px;
     margin-top: 10px;
     justify-content: space-between;
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 50px;
     margin-bottom: 20px;
-    
+}
 
-    }
-    .main-content{
-        height: 100vh;
-        align-self: stretch;
-        margin-left: 3rem;
-        background-image: url(./assets/coffeeshop.jpg);
-        background-size: cover;
-        margin: bottom 0;
-    }
-    
-    .main-content h1{
-        color: aqua;
-      justify-content: center;
-      text-align: center;
-    padding: 50vh;
+.main-content {
+    height: 100vh;
+    align-self: stretch;
+    margin-left: 3rem;
+    background-image: url(./assets/coffeeshop.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.main-content h1 {
+    color: aqua;
+    text-align: center;
+    padding: 50vh 0;
     text-decoration: wavy;
-    }
-    .main-content .btn{
-        color:crimson;
-        justify-content: center;
-    }
+}
 
-
-
+.main-content .btn {
+    color: crimson;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
